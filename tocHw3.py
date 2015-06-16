@@ -1,4 +1,13 @@
 #coding:utf-8
+
+"""徐鼎翔"""
+"""F74011140"""
+"""
+	first, check input is enough(must have two input), and open file.
+	then read every line in file, check if it has "Links", and count its "url" and "href".
+	finally, sorted output, and print the link of top k.
+	but if top k + 1 has same number as top k, print it.
+"""
 import sys
 import json
 
@@ -22,11 +31,9 @@ else:
 			for i in range(0, len(links)):
 				if links[i].has_key("url") or links[i].has_key("href"):
 					maxtemp = maxtemp + 1
-
 			output[ content["Envelope"]["WARC-Header-Metadata"]["WARC-Target-URI"] ] = maxtemp
 
 	output = sorted(output.items(), key=lambda x: x[1], reverse=True)
-
 	for i in range(0, top):
 		print output[i][0] + ":" + str(output[i][1])
 	for i in range(top, len(output)):
