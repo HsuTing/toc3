@@ -15,7 +15,7 @@ import json
 if len(sys.argv) < 3:
 	print "input number is not enough."
 elif len(sys.argv) > 3:
-	print "input numner is too much."
+	print "input number is too much."
 else:
 	fp = open(sys.argv[1], "r")
 	top = int(sys.argv[2])
