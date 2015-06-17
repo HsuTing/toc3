@@ -39,4 +39,6 @@ else:
 	for i in range(top, len(output)):
 		if output[i][1] == output[top - 1][1]:
 			print output[i][0] + ":" + str(output[i][1])
+		else:
+			break
 	fp.close()
