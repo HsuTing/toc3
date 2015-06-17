@@ -3,10 +3,10 @@
 """徐鼎翔"""
 """F74011140"""
 """
-	first, check input is enough(must have two input), and open file.
-	then read every line in file, check if it has "Links", and count its "url" and "href".
-	finally, sorted output, and print the link of top k.
-	but if top k + 1 has same number as top k, print it.
+	First, check input is enough(must have two input), and open file.
+	Then read every line in file, check if it has "Links", and count its "url" and "href".
+	Finally, sorted output, and print the link of top k.
+	But if top k + 1 has same number as top k, print it.
 """
 import sys
 import json
